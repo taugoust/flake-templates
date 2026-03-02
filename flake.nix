@@ -11,6 +11,10 @@
         path = ./python;
         description = "Python project using uv2nix (dev shell + package)";
       };
+      rust = {
+        path = ./rust;
+        description = "Rust project using crane (package, app, checks, dev shell)";
+      };
     };
   };
 }
