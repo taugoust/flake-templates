@@ -19,6 +19,10 @@
         path = ./ocaml;
         description = "OCaml project using opam-nix (package, dev shell)";
       };
+      haskell = {
+        path = ./haskell;
+        description = "Haskell project using cabal2nix (package, dev shell)";
+      };
     };
   };
 }

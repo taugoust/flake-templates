@@ -47,3 +47,16 @@ nix flake init --template github:taugoust/flake-templates#ocaml
 Set `package` to your opam package name, and extend the `overlay` for any dependencies that need
 build-system fixes.
 
+### `haskell`
+
+A Haskell project using [cabal2nix](https://github.com/NixOS/cabal2nix) (`callCabal2nix`), with a
+package and dev shell (`cabal-install`, `haskell-language-server`, `ghcid`, Hoogle).
+
+```sh
+nix flake init --template github:taugoust/flake-templates#haskell
+```
+
+Set `package` to your `.cabal` package name. Override `haskellPackages` with `doJailbreak` /
+`dontCheck` as needed, or swap `pkgs.haskellPackages` for `pkgs.haskell.packages.ghc9XX` to pin a
+specific GHC version.
+
