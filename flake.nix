@@ -15,6 +15,10 @@
         path = ./rust;
         description = "Rust project using crane (package, app, checks, dev shell)";
       };
+      ocaml = {
+        path = ./ocaml;
+        description = "OCaml project using opam-nix (package, dev shell)";
+      };
     };
   };
 }

@@ -34,3 +34,16 @@ and cargo-nextest.
 nix flake init --template github:taugoust/flake-templates#rust
 ```
 
+### `ocaml`
+
+An OCaml project using [opam-nix](https://github.com/tweag/opam-nix) with `buildDuneProject` and
+a pinned `opam-repository`, with a package and dev shell (`ocaml-lsp-server`, `ocamlformat`,
+`utop`).
+
+```sh
+nix flake init --template github:taugoust/flake-templates#ocaml
+```
+
+Set `package` to your opam package name, and extend the `overlay` for any dependencies that need
+build-system fixes.
+
