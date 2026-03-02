@@ -23,6 +23,10 @@
         path = ./haskell;
         description = "Haskell project using cabal2nix (package, dev shell)";
       };
+      isabelle = {
+        path = ./isabelle;
+        description = "Isabelle theory development (build, check, dev shell)";
+      };
     };
   };
 }

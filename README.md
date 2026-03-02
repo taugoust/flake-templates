@@ -60,3 +60,13 @@ Set `package` to your `.cabal` package name. Override `haskellPackages` with `do
 `dontCheck` as needed, or swap `pkgs.haskellPackages` for `pkgs.haskell.packages.ghc9XX` to pin a
 specific GHC version.
 
+### `isabelle`
+
+An Isabelle theory development environment. Builds all sessions declared in `ROOT` files via
+`isabelle build -D .`, capturing browser info as output. `packages.default` and `checks.default`
+both point to the same derivation — running `nix flake check` verifies the theories.
+
+```sh
+nix flake init --template github:taugoust/flake-templates#isabelle
+```
+
