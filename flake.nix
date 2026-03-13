@@ -27,6 +27,10 @@
         path = ./isabelle;
         description = "Isabelle theory development (build, check, dev shell)";
       };
+      latex-acm = {
+        path = ./latex-acm;
+        description = "ACM LaTeX paper (build PDF, open app, dev shell)";
+      };
     };
   };
 }
