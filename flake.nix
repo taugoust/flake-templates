@@ -23,6 +23,10 @@
         path = ./haskell;
         description = "Haskell project using cabal2nix (package, dev shell)";
       };
+      lean = {
+        path = ./lean;
+        description = "Lean 4 and Lake hello-world project (package, checks, dev shell)";
+      };
       isabelle = {
         path = ./isabelle;
         description = "Isabelle theory development (build, check, dev shell)";

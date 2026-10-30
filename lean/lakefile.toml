@@ -1,0 +1,7 @@
+name = "hello"
+version = "0.1.0"
+defaultTargets = ["hello"]
+
+[[lean_exe]]
+name = "hello"
+root = "Main"

@@ -60,6 +60,22 @@ Set `package` to your `.cabal` package name. Override `haskellPackages` with `do
 `dontCheck` as needed, or swap `pkgs.haskellPackages` for `pkgs.haskell.packages.ghc9XX` to pin a
 specific GHC version.
 
+### `lean`
+
+A Lean 4 hello-world project using [lean4-nix](https://github.com/lenianiva/lean4-nix),
+with Lean and Lake in the development shell, a Nix executable, and checks for both
+the Nix package and the Lake project. Includes `lean-toolchain`, `lakefile.toml`,
+`lake-manifest.json`, and direnv integration; generated `.lake/` artifacts are omitted.
+
+```sh
+nix flake init --template github:taugoust/flake-templates#lean
+nix run
+nix flake check
+```
+
+See the generated `README.md` for Lake development, packaging limitations, and
+the pinned toolchain's macOS compatibility workaround.
+
 ### `quint`
 
 A [Quint](https://quint.sh/docs/getting-started) specification starter with a pinned
