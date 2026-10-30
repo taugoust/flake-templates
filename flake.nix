@@ -27,6 +27,10 @@
         path = ./isabelle;
         description = "Isabelle theory development (build, check, dev shell)";
       };
+      quint = {
+        path = ./quint;
+        description = "Quint specification starter (simulation app, checks, dev shell, language server)";
+      };
       latex-acm = {
         path = ./latex-acm;
         description = "ACM LaTeX paper (build PDF, open app, dev shell)";

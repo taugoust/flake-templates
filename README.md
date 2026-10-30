@@ -60,6 +60,21 @@ Set `package` to your `.cabal` package name. Override `haskellPackages` with `do
 `dontCheck` as needed, or swap `pkgs.haskellPackages` for `pkgs.haskell.packages.ghc9XX` to pin a
 specific GHC version.
 
+### `quint`
+
+A [Quint](https://quint.sh/docs/getting-started) specification starter with a pinned
+Nix environment, direnv integration, and the Quint language server. Includes a
+hello-world state machine, `nix run` simulation, and `nix flake check` checks for
+typechecking, simulation, and the language-server protocol.
+
+```sh
+nix flake init --template github:taugoust/flake-templates#quint
+nix run
+nix flake check
+```
+
+See the generated `README.md` for development-shell and editor setup.
+
 ### `isabelle`
 
 An Isabelle theory development environment. Builds all sessions declared in `ROOT` files via
